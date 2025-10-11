@@ -7,7 +7,7 @@ class Solution:
             ld=x%10
             result=(result*10)+ld
             x=x//10
-            if result > 2**31 - 1:
+            if result<-2**31 or result>2**31-1:
                 return 0
         return sign *result
         
